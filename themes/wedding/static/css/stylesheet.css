@@ -1,0 +1,471 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: rgb(249, 244, 250);
+    margin: 0;
+    padding-top: 0px; 
+    font-family: 'Source Serif Pro', serif;
+}
+
+a{
+    color:rgb(46, 41, 45);
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+.target-container{
+    position: relative;
+}
+
+.flex-containers{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 10px;
+    
+}
+
+.our-story-text{
+    font-size: 24px;
+
+}
+
+.flex-item{
+
+    align-items: space-between;
+    flex-grow: 1;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.btn{
+    background-color: rgb(90, 90, 223);
+    font-family: 'Source Serif Pro', serif;
+    font-weight: bold;
+    color: white;
+    border-radius: 25px;
+    font-size: 20px;
+    border-style: none;
+    border-color:rgb(82, 82, 190);
+    height: 50px;
+    width: 150px;
+}
+
+.btn:hover{
+    background-color: rgb(143, 143, 221);
+    border-color:rgb(140, 140, 247);
+}
+
+.btn:active{
+    background-color: rgb(56, 56, 131);
+}
+
+
+.nav-target{
+    background-color: blue;
+    height: 10px;
+    width: 10px;
+    padding: 50px;
+    top: -80px;
+    position: absolute;
+    visibility: hidden;
+}
+
+
+section{
+
+    padding: 20px;
+    display: flex;
+    min-height: 60vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer{
+    text-align: center;
+    display: flex;
+    align-items: space-evenly;
+    justify-content: center;
+    position: relative;
+    padding-top: 80px;
+    height:300px;
+    background-color: rgba(168, 252, 200, 0.774);
+    margin: 0 auto;
+}
+
+
+
+.logo{
+    font-size: 35px;
+    padding: 35px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.landing-page{
+    padding-top: 30px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-page-wrapper{
+    background-color: rgba(168, 252, 200, 0.774);
+
+    width: 60vw;
+  
+    text-align: center;
+    border-radius: 10px;
+    animation: wrapper-slide-up 1s;
+}
+
+.landing-page-wrapper h2{
+    font-weight: bold;
+}
+
+@keyframes wrapper-slide-up{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.landing-page-img{
+    background: chocolate;
+    background-image: url('../images/wedding_pic_5.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: rgba(168, 252, 200, 0.774);
+}
+
+.hero-title{
+    display: block;
+    margin: 20px auto 10px;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 6.0em;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 1);
+    animation: hero-anim 1.3s;
+    z-index: 1;
+
+    
+}
+
+@keyframes hero-anim{
+    from{
+        opacity: 0;
+        letter-spacing: 0.5em;
+    }
+
+    to{
+        letter-spacing: 0em;
+        opacity: 1;
+    }
+
+}
+
+.banner-image{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 40vh;
+    min-height: 10vh;
+    animation: banner-fade 1s;
+    border-radius: 25px;   
+}
+
+
+
+@keyframes banner-fade{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.header-container{
+
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(248, 197, 244, 1);
+    box-shadow: black;
+    color:rgb(46, 41, 45);
+    align-items: center;
+    height: 80px;
+    z-index: 250;
+
+}
+
+.info-wrapper{
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  
+    width: 50vw;
+
+    text-align: center;
+    background-color: rgba(249, 244, 250,0.774);
+    font-size: 20px;
+    border-radius: 10px;
+    
+}
+
+.info-flex-container{
+    max-width: 50%;
+    align-self: center;
+}
+
+.info-wrapper-green{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    width: 50vw;
+
+    text-align: center;
+    background-color: rgba(168, 252, 200, 0.774);
+
+    border-radius: 10px;
+}
+
+.navbar{
+    list-style-type: none;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+.navbar li{
+    display: inline-block;
+
+}
+
+.navbar li a{
+    width: 200px;
+    padding: 15px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+}
+
+.our-story-section{
+
+    min-height: 100vh;
+    background-image: url("../images/wedding_pic_3.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.date-and-location-section{
+    background-color: rgba(141, 202, 122, 0.733);
+    min-height: 100vh;
+  
+}
+
+.email-rsvp-section{
+    min-height: 100vh;
+    background-image: url("../images/wedding_pix_7.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.registry-section{
+    background-color: cadetblue;
+    min-height: 100vh;
+}
+
+h1{
+    margin: 0px;
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+}
+
+
+
+.navigation-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hamburger{
+    display: none;
+    visibility: hidden;
+}
+
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+
+#toggle{
+    display: none;
+}
+
+
+.nav-mobile{
+    display: none;
+  
+}
+
+@media(min-width:390px){
+    .banner-image{
+        max-width: 15vh;
+     
+    }
+
+}
+
+@media (max-width: 830px){
+
+    .hamburger{
+        display: inline-block;
+        visibility: visible;
+        margin-right: 25px;
+
+    }
+    .hamburger:hover{
+        cursor: pointer;
+    }
+
+    .nav-mobile{
+        background-color: rgba(0, 0, 0, 0.75 );
+        color: white;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        color: rgb(255, 255, 255);
+        opacity: 1;
+       
+    }
+
+    .nav-mobile nav ul{
+        list-style-type: none;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-mobile nav ul li{
+        margin-top: 45px;
+    }
+
+    .nav-mobile nav ul a{
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+    }
+
+    .nav-mobile p{
+        margin: 0;
+    }
+    .navbar{
+        display: none;
+
+    }
+    
+    #toggle{
+        color: aliceblue;
+    }
+
+    #toggle:checked + .nav-mobile {
+       display: flex;
+    }
+   
+
+    .logo{
+        font-size: 35px;
+    }
+
+}
+
+@media (min-height: 900px){
+    .info-wrapper , .info-wrapper-green{
+
+        text-align: center;
+ 
+        border-radius: 10px;
+        
+    }
+
+    
+}
+
+
+/** Media Devices **/
+
+@media (max-width: 1000px){
+    .hero-title{
+        font-size: 2.5em;
+    }
+    .banner-image{
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        max-width: 30vw;
+        max-width: 60vw;
+        animation: banner-fade 3s;
+        border-radius: 25px;   
+    }
+
+    .email-rsvp-section{
+        background-size: 100vh 100vh;
+    }
+    .landing-page-wrapper{
+        background-color: rgba(168, 252, 200, 0.774);
+        margin: 50px auto;
+        width: 70vw;
+       
+        text-align: center;
+        border-radius: 10px;
+        animation: wrapper-slide-up 3s;
+    }
+    
+    .info-wrapper, .info-wrapper-green{
+
+        text-align: center;
+        width: 75vw;
+        border-radius: 10px;
+        
+    }
+} 
