@@ -343,6 +343,9 @@ h2{
   
 }
 
+.form-margin{
+    margin-bottom: 10px;
+}
 
 @media (max-width: 830px){
 
