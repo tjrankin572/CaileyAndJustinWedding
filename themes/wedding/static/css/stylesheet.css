@@ -120,7 +120,7 @@ footer{
 .landing-page-wrapper{
     background-color: rgba(168, 252, 200, 0.774);
 
-    width: 60vw;
+    width: 60vh;
   
     text-align: center;
     border-radius: 10px;
@@ -154,7 +154,7 @@ footer{
     margin: 20px auto 10px;
     text-align: center;
     font-family: 'Dancing Script', cursive;
-    font-size: 6.0em;
+    font-size: 3.0em;
     font-weight: 100;
     color: rgba(0, 0, 0, 1);
     animation: hero-anim 1.3s;
@@ -180,7 +180,7 @@ footer{
     display: block;
     margin: 0 auto;
     padding: 10px;
-    max-width: 40vh;
+    max-width: 30vh;
     min-height: 10vh;
     animation: banner-fade 1s;
     border-radius: 25px;   
