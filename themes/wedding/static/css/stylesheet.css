@@ -343,13 +343,6 @@ h2{
   
 }
 
-@media(min-width:390px){
-    .banner-image{
-        max-width: 15vh;
-     
-    }
-
-}
 
 @media (max-width: 830px){
 
