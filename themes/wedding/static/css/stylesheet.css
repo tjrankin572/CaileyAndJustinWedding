@@ -30,7 +30,8 @@ a:hover{
 }
 
 .our-story-text{
-    font-size: 24px;
+    font-size: 50px;
+    color:black;
 
 }
 
@@ -225,8 +226,8 @@ header{
     width: 50vw;
 
     text-align: center;
-    background-color: rgba(249, 244, 250,0.774);
-    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 24px;
     border-radius: 10px;
     
 }
