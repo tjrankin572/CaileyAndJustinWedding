@@ -28,11 +28,11 @@
                 
                 <nav>
                     <ul class="navbar">
-                        <li><a href="#nav-our-story" for="toggle">Our Story</a></li>
-                        <li><a href="#nav-dl" for="toggle">When & Where</a></li>
-                        <li><a href="#nav-rsvp" for="toggle">RSVP/Email</a></li>
-                        <li><a href="#nav-reg" for="toggle">Registry</a></li>
-                        <li><a href="#nav-cont" for="toggle">Contact</a></li>
+                        <li><a href="#nav-our-story">Our Story</a></li>
+                        <li><a href="#nav-dl">When & Where</a></li>
+                        <li><a href="#nav-rsvp">RSVP/Email</a></li>
+                        <li><a href="#nav-reg">Registry</a></li>
+                        <li><a href="#nav-cont">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,7 +41,7 @@
         <input type="checkbox" id="toggle"></input>
         <div class="nav-mobile">
             <nav>
-                <ul>
+                <ul id="navLinks">
                     <li><a href="#nav-our-story">Our Story</a></li>
                     <li><a href="#nav-dl">When & Where</a></li>
                     <li><a href="#nav-rsvp">RSVP/Email</a></li>
@@ -52,6 +52,16 @@
         </div>
         
     </header>
+
+    <script>
+        const navLinkItems = document.querySelectorAll('#navLinks a');
+        
+        navLinkItems.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
     
     <main>
         <section class="landing-page" id="home">
