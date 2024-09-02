@@ -330,15 +330,8 @@ h2{
     cursor: pointer;
 }
 
-
-#toggle{
-    display: none;
-}
-
-
 .nav-mobile{
     display: none;
-  
 }
 
 .form-margin{
@@ -356,13 +349,16 @@ h2{
     .hamburger:hover{
         cursor: pointer;
     }
+    .navbar{
+        display: none;
+    }
 
     .nav-mobile{
         background-color: rgba(0, 0, 0, 0.75 );
         color: white;
+        display: none;
         width: 100%;
         height: 100vh;
-        display: none;
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
@@ -373,6 +369,7 @@ h2{
 
     .nav-mobile nav ul{
         list-style-type: none;
+        display: none;
         margin: 0px;
         padding: 0px;
         display: flex;
@@ -393,19 +390,10 @@ h2{
     .nav-mobile p{
         margin: 0;
     }
-    .navbar{
-        display: none;
 
+    .nav-mobile.show{
+        display: flex;
     }
-    
-    #toggle{
-        color: aliceblue;
-    }
-
-    #toggle:checked + .nav-mobile {
-       display: flex;
-    }
-   
 
     .logo{
         font-size: 35px;
@@ -415,11 +403,8 @@ h2{
 
 @media (min-height: 900px){
     .info-wrapper , .info-wrapper-green{
-
         text-align: center;
- 
         border-radius: 10px;
-        
     }
 
     
