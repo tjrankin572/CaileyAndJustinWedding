@@ -24,7 +24,7 @@
         </div>
         
         <input type="checkbox" id="toggle"></input>
-        <div class="nav-mobile">
+        <div class="nav-mobile" id="navMobileList">
             <nav>
                 <ul id="navLinks">
                     <li><a href="#nav-our-story">Our Story</a></li>
@@ -39,11 +39,12 @@
     </header>
 
     <script>
+        const navMobileList = document.getElementById('navMobileList');
         const navLinkItems = document.querySelectorAll('#navLinks a');
         
         navLinkItems.forEach(link => {
             link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
+                navMobileList.classList.remove('active');
             });
         });
     </script>
