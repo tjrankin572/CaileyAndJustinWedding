@@ -1,4 +1,5 @@
 baseURL = "https://tjrankin572.github.io/CaileyAndJustinWedding/"
+baseURL = "{{ .Site.BaseURL }}"
 languageCode = "en-us"
 title = "Cailey And Justin"
 theme = "wedding"
