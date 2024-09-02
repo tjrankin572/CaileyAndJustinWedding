@@ -1,0 +1,2 @@
+command = "hugo --config config.production.toml"
+publish = "public"
