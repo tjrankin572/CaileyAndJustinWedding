@@ -3,7 +3,7 @@ name: Deploy Hugo site to GitHub Pages
 on:
   push:
     branches:
-      - preview  # or master, depending on your branch name
+      - preview
 
 jobs:
   deploy:
