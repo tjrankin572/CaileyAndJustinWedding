@@ -1,4 +1,3 @@
-
 baseURL = "{{ .Site.BaseURL }}"
 languageCode = "en-us"
 title = "Cailey And Justin"
