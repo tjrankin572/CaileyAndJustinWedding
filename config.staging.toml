@@ -1,1 +1,4 @@
-baseURL = "https://tjrankin572.github.io/CaileyAndJustinWedding"
+baseURL = "https://tjrankin572.github.io/CaileyAndJustinWedding/"
+languageCode = "en-us"
+title = "Cailey And Justin"
+theme = "wedding"
