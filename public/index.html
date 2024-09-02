@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.133.1"><script src="/CaileyAndJustinWedding/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=CaileyAndJustinWedding/livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.133.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cailey and Justin</title>
-    <link rel="stylesheet" href="{{ "css/stylesheet.css" | relURL }}">
+    <link rel="stylesheet" href="/css/stylesheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,7 +23,7 @@
            
         <div class="header-container">
             <a class="logo" href="#home">Cailey & Justin</a>
-            <label for="toggle" class="hamburger"><i  class="fas fa-bars fa-2x"></i></label>
+            <label class="hamburger" id="hamburgerMenu"><i  class="fas fa-bars fa-2x"></i></label>
             <div class="navigation-container">
                 
                 <nav>
@@ -38,10 +38,9 @@
             </div>
         </div>
         
-        <input type="checkbox" id="toggle"></input>
-        <div class="nav-mobile">
+        <div class="nav-mobile" id="navMobileList">
             <nav>
-                <ul>
+                <ul id="navLinks">
                     <li><a href="#nav-our-story">Our Story</a></li>
                     <li><a href="#nav-dl">When & Where</a></li>
                     <li><a href="#nav-rsvp">RSVP/Email</a></li>
@@ -52,6 +51,22 @@
         </div>
         
     </header>
+
+    <script>
+        const menuIcon = document.getElementById('hamburgerMenu');
+        const navMobileList = document.getElementById('navMobileList');
+        const navLinkItems = document.querySelectorAll('#navLinks a');
+        
+        menuIcon.addEventListener('click', () => {
+            navMobileList.classList.toggle('show');
+        });
+        
+        navLinkItems.forEach(link => {
+            link.addEventListener('click', () => {
+                navMobileList.classList.remove('show');
+            });
+        });
+    </script>
     
     <main>
         <section class="landing-page" id="home">
